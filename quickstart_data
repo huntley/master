@@ -41,14 +41,29 @@ Information for installing the ownCloud Enterprise Edition or the ownCloud appli
 - PHP is installed
 
 ## Procedure
-1. Trust the ownCloud repository.
-  sudo rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
+1. Trust the ownCloud repository.  
+    ```sudo rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key```
 
-2. Add the ownCloud repository.
-  sudo wget http://download.owncloud.org/download/repositories/production/RHEL_7/ce:stable.repo -O /etc/yum.repos.d/ce:stable.repo
+2. Add the ownCloud repository.  
+    ```sudo wget http://download.owncloud.org/download/repositories/production/RHEL_7/ce:stable.repo -O /etc/yum.repos.d/ce:stable.repo```
 
-3. Clean the `yum` cache.
-  sudo yum clean all
+3. Clean the `yum` cache.  
+    ```sudo yum clean all```
 
-4. Install the package.
-  sudo yum install owncloud-files
+4. Install the package.  
+    ```sudo yum install owncloud-files```
+
+5. Run the installation wizard to complete the installation.  
+    1. Enter http://localhost/owncloud in your Web browser.
+    2. Enter an administrator username and password.
+    3. Click `Finish Setup`.
+
+# CONFIGURE OWNCLOUD TO USE TCP PORT 8080
+You can modify ownCloud to listen on a TCP port other than the default port 80. The TCP port is controlled by the Web server. For Apache, use the following instructions:
+
+1. Edit `httpd.conf` to add the `LISTEN 8080` directive. The `httpd.conf` file is located in /etc/apache2/ directory.
+
+2. Edit `ports.conf` to specify `Listen 8080`. The 'ports.conf' file is located in the /etc/apache2/ directory.
+
+3. Restart Apache.  
+    ````sudo service apache2 restart````
