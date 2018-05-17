@@ -1,1 +1,26 @@
-Content from work
+# PREFACE
+This guide takes you through the process of installing ownCloud on Red Hat Enterprise Linux. It lists the ownCloud requirements, describes the installation process, and provides basic configuration instructions.
+
+# OWNCLOUD REQUIREMENNTS
+Review the server requirements prior to installing the ownCloud server. Install the related software before you install ownCloud.
+
+## Operating System
+- Red Hat Enterprise Linux 6.9, 7.3, or 7.4
+
+## Database
+- MySQL
+- MariaDB 5.5+
+- Oracle 11g
+- PostgreSQL
+- SQLite
+
+## Web Server
+- Apache 2.5 with prefork  Multi-Processing Module (MPM) and mod_php
+## Web Browser
+
+## Mobile
+Platform | Options
+-------------------
+Server | Red Hat Enterprise Linux 6.9, 7.3, or 7.4
+Database | MySQL or MariaDB 5.5+, Oracle 11g, PostgreSQL, or SQLite
+Web server |
