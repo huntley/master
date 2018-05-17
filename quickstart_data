@@ -4,6 +4,8 @@ This guide takes you through the process of installing ownCloud on Red Hat Enter
 # OWNCLOUD REQUIREMENNTS
 Review the server requirements prior to installing the ownCloud server. Install the related software before you install ownCloud.
 
+Information for installing the ownCloud Enterprise Edition or the ownCloud appliance is available in the [ownCloud documentation](https://doc.owncloud.org/server/latest/admin_manual/contents.html).
+
 ## Operating System
 - Red Hat Enterprise Linux 6.9, 7.3, or 7.4
 
@@ -15,12 +17,38 @@ Review the server requirements prior to installing the ownCloud server. Install 
 - SQLite
 
 ## Web Server
-- Apache 2.5 with prefork  Multi-Processing Module (MPM) and mod_php
+- Apache 2.5 with `prefork`  Multi-Processing Module (MPM) and `mod_php`
+
+## PHP Runtime
+- 5.6+, 7.0, or 7.1
+
 ## Web Browser
+- Edge (Windows 10)
+- Internet Explorer 11
+- Firefox 57 or 52 ESR
+- Chrome 64+
+- Safari 10+
 
 ## Mobile
-Platform | Options
--------------------
-Server | Red Hat Enterprise Linux 6.9, 7.3, or 7.4
-Database | MySQL or MariaDB 5.5+, Oracle 11g, PostgreSQL, or SQLite
-Web server |
+- iOS 9+
+- Android 4.0+
+
+# INSTALLING OWNCLOUD
+
+## Prerequisites
+- Red Hat Enterprise Linux 6.9 or later is installed
+- Apache is installed
+- PHP is installed
+
+## Procedure
+1. Trust the ownCloud repository.
+  sudo rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
+
+2. Add the ownCloud repository.
+  sudo wget http://download.owncloud.org/download/repositories/production/RHEL_7/ce:stable.repo -O /etc/yum.repos.d/ce:stable.repo
+
+3. Clean the `yum` cache.
+  sudo yum clean all
+
+4. Install the package.
+  sudo yum install owncloud-files
