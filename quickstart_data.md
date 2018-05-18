@@ -1,3 +1,12 @@
+[Preface](/PREFACE/)  
+[Requirements](/OWNCLOUD REQUIREMENNTS/)  
+[Installing ownCloud](INSTALLING OWNCLOUD/)  
+[Configuring ownCloud](/CONFIGURING OWNCLOUD TO USE TCP PORT 8080/)  
+[Adding a User to ownCloud](/ADDING A USER TO OWNCLOUD/)  
+[Connectinog to ownCloud](/CONNECTING TO OWNCLOUD/)
+
+
+
 # PREFACE
 This guide takes you through the process of installing ownCloud on Red Hat Enterprise Linux. It lists the ownCloud requirements, describes the installation process, and provides basic configuration instructions.
 
@@ -58,7 +67,7 @@ Information for installing the ownCloud Enterprise Edition or the ownCloud appli
     2. Enter an administrator username and password.
     3. Click `Finish Setup`.
 
-# CONFIGURE OWNCLOUD TO USE TCP PORT 8080
+# CONFIGURING OWNCLOUD TO USE TCP PORT 8080
 You can modify ownCloud to listen on a TCP port other than the default port 80. The TCP port is controlled by the Web server. For Apache, use the following instructions:
 
 1. Edit `httpd.conf` to add the `LISTEN 8080` directive. The `httpd.conf` file is located in /etc/apache2/ directory.
@@ -70,7 +79,7 @@ You can modify ownCloud to listen on a TCP port other than the default port 80. 
 
 4. Modify your firewall rules to allow incoming connections on TCP port 8080.
 
-# ADDING A USER ACCOUNT
+# ADDING A USER TO OWNCLOUD
 Add users to provide access to ownCloud.
 1. Open the User management page of the ownCloud Web UI.  
 
