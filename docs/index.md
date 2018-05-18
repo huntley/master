@@ -58,7 +58,7 @@ Information for installing the ownCloud Enterprise Edition or the ownCloud appli
     ```sudo yum install owncloud-files```
 
 5. Run the installation wizard to complete the installation.  
-    1. Enter http://localhost/owncloud in your Web browser.
+    1. Enter `http://localhost/owncloud` in your Web browser.
     2. Enter an administrator username and password.
     3. Click `Finish Setup`.
 
