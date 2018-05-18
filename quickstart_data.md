@@ -1,9 +1,9 @@
-[Preface](/PREFACE/)  
-[Requirements](/OWNCLOUD REQUIREMENNTS/)  
-[Installing ownCloud](INSTALLING OWNCLOUD/)  
-[Configuring ownCloud](/CONFIGURING OWNCLOUD TO USE TCP PORT 8080/)  
-[Adding a User to ownCloud](/ADDING A USER TO OWNCLOUD/)  
-[Connectinog to ownCloud](/CONNECTING TO OWNCLOUD/)
+[Preface](#PREFACE#)  
+[Requirements](#OWNCLOUD-REQUIREMENNTS)  
+[Installing ownCloud](#INSTALLING-OWNCLOUD)  
+[Configuring ownCloud](#CONFIGURING-OWNCLOUD-TO-USE-TCP-PORT-8080)  
+[Adding a User to ownCloud](#ADDING-A-USER-TO-OWNCLOUD)  
+[Connectinog to ownCloud](#CONNECTING-TO-OWNCLOUD)
 
 
 
