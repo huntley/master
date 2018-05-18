@@ -74,7 +74,7 @@ You can modify ownCloud to listen on a different TCP port instead of the default
 4. Modify your firewall rules to allow incoming connections on TCP port 8080.
 
 ## ADDING A USER TO OWNCLOUD
-Add users to provide access to ownCloud.
+Add users to provide access to ownCloud. Users with accounts can take advantage of the file sharing and file syncing features of ownCloud.  
 1. Open the User management page of the ownCloud Web UI.  
 
 2. Enter a username and password for the new user in the fields above the user list.  
