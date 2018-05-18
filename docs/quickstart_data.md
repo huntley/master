@@ -62,7 +62,7 @@ Information for installing the ownCloud Enterprise Edition or the ownCloud appli
     3. Click `Finish Setup`.
 
 ## CONFIGURING OWNCLOUD TO USE TCP PORT 8080
-You can modify ownCloud to listen on a TCP port other than the default port 80. The TCP port is controlled by the Web server. For Apache, use the following instructions:
+You can modify ownCloud to listen on a different TCP port instead of the default port of 80. ownCloud uses the TCP port provided by the Web server. The following instructions describe how  to change the TCP port for Apache.
 
 1. Edit `httpd.conf` to add the `LISTEN 8080` directive. The `httpd.conf` file is located in /etc/apache2/ directory.
 
