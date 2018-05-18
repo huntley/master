@@ -67,3 +67,28 @@ You can modify ownCloud to listen on a TCP port other than the default port 80. 
 
 3. Restart Apache.  
     ````sudo service apache2 restart````
+
+4. Modify your firewall rules to allow incoming connections on TCP port 8080.
+
+# ADDING A USER ACCOUNT
+Add users to provide access to ownCloud.
+1. Open the User management page of the ownCloud Web UI.  
+
+2. Enter a username and password for the new user in the fields above the user list.  
+
+3. Optionally, assign the user to a group.  
+
+4. Click `Create`.  
+
+If you checked `Send email to new user` in the control panel on the lower left sidebar, you can enter the email address of the user and ownCloud will send the user a message with their account information.
+
+# CONNECTING TO OWNCLOUD
+Users can access ownCloud using their desktop browser or mobile device.
+
+1. Install an ownCloud client.  
+
+    Desktop clients are available for Windows, MacOS X, and Linux. Mobile clients are available for iOS and Android mobile devices.
+
+2. Open the client and enter the IP address and port of the ownCloud server.  
+
+    For example, for an ownCloud server with an IP address of 192.168.10.10, the server address is `http://192.168.10.10:8080/owncloud`
