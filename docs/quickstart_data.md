@@ -1,55 +1,49 @@
-[Preface](#PREFACE#)  
-[Requirements](#OWNCLOUD-REQUIREMENNTS)  
-[Installing ownCloud](#INSTALLING-OWNCLOUD)  
-[Configuring ownCloud](#CONFIGURING-OWNCLOUD-TO-USE-TCP-PORT-8080)  
-[Adding a User to ownCloud](#ADDING-A-USER-TO-OWNCLOUD)  
-[Connectinog to ownCloud](#CONNECTING-TO-OWNCLOUD)
+# OWNCLOUD QUICKSTART
 
 
-
-# PREFACE
+## PREFACE
 This guide takes you through the process of installing ownCloud on Red Hat Enterprise Linux. It lists the ownCloud requirements, describes the installation process, and provides basic configuration instructions.
 
-# OWNCLOUD REQUIREMENNTS
+## OWNCLOUD REQUIREMENNTS
 Review the server requirements prior to installing the ownCloud server. Install the related software before you install ownCloud.
 
 Information for installing the ownCloud Enterprise Edition or the ownCloud appliance is available in the [ownCloud documentation](https://doc.owncloud.org/server/latest/admin_manual/contents.html).
 
-## Operating System
+### Operating System
 - Red Hat Enterprise Linux 6.9, 7.3, or 7.4
 
-## Database
+### Database
 - MySQL
 - MariaDB 5.5+
 - Oracle 11g
 - PostgreSQL
 - SQLite
 
-## Web Server
+### Web Server
 - Apache 2.5 with `prefork`  Multi-Processing Module (MPM) and `mod_php`
 
-## PHP Runtime
+### PHP Runtime
 - 5.6+, 7.0, or 7.1
 
-## Web Browser
+### Web Browser
 - Edge (Windows 10)
 - Internet Explorer 11
 - Firefox 57 or 52 ESR
 - Chrome 64+
 - Safari 10+
 
-## Mobile
+### Mobile
 - iOS 9+
 - Android 4.0+
 
-# INSTALLING OWNCLOUD
+## INSTALLING OWNCLOUD
 
-## Prerequisites
+#### Prerequisites
 - Red Hat Enterprise Linux 6.9 or later is installed
 - Apache is installed
 - PHP is installed
 
-## Procedure
+#### Procedure
 1. Trust the ownCloud repository.  
     ```sudo rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key```
 
@@ -67,7 +61,7 @@ Information for installing the ownCloud Enterprise Edition or the ownCloud appli
     2. Enter an administrator username and password.
     3. Click `Finish Setup`.
 
-# CONFIGURING OWNCLOUD TO USE TCP PORT 8080
+## CONFIGURING OWNCLOUD TO USE TCP PORT 8080
 You can modify ownCloud to listen on a TCP port other than the default port 80. The TCP port is controlled by the Web server. For Apache, use the following instructions:
 
 1. Edit `httpd.conf` to add the `LISTEN 8080` directive. The `httpd.conf` file is located in /etc/apache2/ directory.
@@ -79,7 +73,7 @@ You can modify ownCloud to listen on a TCP port other than the default port 80. 
 
 4. Modify your firewall rules to allow incoming connections on TCP port 8080.
 
-# ADDING A USER TO OWNCLOUD
+## ADDING A USER TO OWNCLOUD
 Add users to provide access to ownCloud.
 1. Open the User management page of the ownCloud Web UI.  
 
@@ -91,7 +85,7 @@ Add users to provide access to ownCloud.
 
 If you checked `Send email to new user` in the control panel on the lower left sidebar, you can enter the email address of the user and ownCloud will send the user a message with their account information.
 
-# CONNECTING TO OWNCLOUD
+## CONNECTING TO OWNCLOUD
 Users can access ownCloud using their desktop browser or mobile device.
 
 1. Install an ownCloud client.  
